@@ -1,0 +1,309 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+body
+{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+     
+}
+* {
+   box-sizing: border-box;
+    margin: 0;
+}
+.search{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+    }
+header input{
+    border: 2px solid yellow;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Header*/
+
+    header{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        padding: 0px 15px;
+    }
+header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+header .brand-name a{
+   text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+}
+header .brand-name a ::before{
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+header .navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header .navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+header .navbar ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 72px;
+    color: yellow;
+    font-weight: 600;
+    position: relative;
+}
+header .navbar ul li a::before{
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    width: 0%;
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    transition: all .5s ease;
+}
+header .navbar ul li a:hover::before{
+    width: 100%;
+    left: 0;
+    background-color: aqua;
+     
+}
+header .navbar ul li a.active::before{
+       width: 100%;
+    left: 0;
+}
+
+.logo img{
+    width: 200px;
+    cursor: pointer;
+    margin: 35px 0;
+    
+    opacity: 0;
+}
+
+
+.social{
+    
+    position: absolute;
+    right: 30px;
+    top: 50%;
+     
+    
+}
+.social ul{
+    list-style-type: none;
+    padding: 0;
+    transform: translateY(-50%);
+   
+}
+.social ul li {
+    display: block;
+    margin:  5px;
+    background-color: white;
+    width: 150px;
+    text-align: center;
+    padding: 0px;
+    border-radius: 35px 35px 35px 35px;
+    transition: all 1s;
+      border: 2px solid yellow;
+    border-radius: 14px;
+     
+}
+.social ul li :hover{
+    transform: translateX(110px);
+}
+.social ul li .twitter:hover{
+    background-color: red;
+}
+.social ul li .facebook:hover{
+    background-color: blue;
+}
+.social ul li .youtube:hover{
+    background-color: orangered;
+}
+.social ul li .linkedin:hover{
+    background-color: pink;
+}
+.socail ul li a{
+    color: white;
+    text-decoration: none;
+}
+.social ul li i{
+    text-align: center;
+    margin-right: 14px;
+    color: blueviolet;
+    padding: 15px;
+    border-radius: 50%;
+    width: 20px;
+    font-size: 20px;
+    transform: rotate(0deg);
+}
+.social ul li;:hover i{
+    transform: rotate(360deg);
+    
+}
+.social ul li:hover i{
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+    
+/*Home Section*/
+
+
+.home{
+    min-height: 100vh;
+    background-image: url("sailu1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+.home .full-screen{
+    min-height: 100vh;
+    margin: 60px;
+}
+.home .home-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.home .home-content .block{
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-left: 35px;
+    border-left: 5px solid #ffffff;
+    margin-top: 50px;
+}
+
+.home .home-content .block h6{
+    color: yellow;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+.home .home-content .block h1{
+     color:#ffffff;
+    font-size: 70px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+.home .home-content .block h2{
+      color: yellow;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    
+}
+.home .home-content .block .cv-btn{
+    padding-top: 20px;
+}
+.home .home-content .block .cv-btn a{
+    border-radius: 4px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+    
+}
+.home .home-content .block .cv-btn a:hover{
+    background-color: aqua;
+    color: #000000;
+}
+/*About Me */
+
+.about-me{
+    padding: 100px 15px;
+}
+.about-me .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about-me .section-title h1{
+   display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700px;
+    color: #000000;
+    margin: 0 0 5px;
+    position: relative;
+    padding-bottom: 5px;
+}
+.about-me .section-title h1:before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+
+.text-uppercase{
+    text-transform: uppercase!important;
+}
+.about-me .section-title p.small{
+    display: block;
+    font-size: 14px;
+    color: #838383;
+    font-weight: 400;
+}
+
+@viewport{
+    zoom:1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom:1.0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
